@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Café | The Game Begins</title>
+    <style>
+        :root {
+            --squid-pink: #ED1B76;
+            --squid-green: #037A76;
+            --squid-black: #000000;
+        }
+
+        body {
+            background-color: var(--squid-black);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1511920135112-d57b643ca123?q=80&w=600'); /* Professional Coffee Background */
+            background-size: cover;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-bottom: 5px solid var(--squid-pink);
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: var(--squid-pink);
+            text-shadow: 2px 2px var(--squid-green);
+            margin: 0;
+        }
+
+        .section-title {
+            background-color: var(--squid-green);
+            padding: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .menu-container {
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px dashed #444;
+        }
+
+        .item-name { font-size: 1.2rem; color: #fff; }
+        .item-price { color: var(--squid-pink); font-weight: bold; }
+
+        .footer {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #111;
+            border-top: 2px solid var(--squid-green);
+        }
+
+        .btn-call {
+            background-color: var(--squid-pink);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">SQUID CAFÉ</h1>
+        <p>Player 456, Your Order is Ready.</p>
+    </header>
+
+    <div class="menu-container">
+        <div class="section-title">COFFEE & HOT DRINKS</div>
+        
+        <div class="menu-item">
+            <span class="item-name">Espresso</span>
+            <span class="item-price">2.500 DT</span>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Capucin</span>
+            <span class="item-price">3.200 DT</span>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Chocolat Chaud</span>
+            <span class="item-price">4.500 DT</span>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Direct (Tea)</span>
+            <span class="item-price">1.800 DT</span>
+        </div>
+
+        <div class="section-title">REFRESHMENTS</div>
+        
+        <div class="menu-item">
+            <span class="item-name">Orange Juice (Fresh)</span>
+            <span class="item-price">5.000 DT</span>
+        </div>
+
+        <div class="section-title">DESSERTS & VAPE</div>
+        
+        <div class="menu-item">
+            <span class="item-name">Gâteaux du Jour</span>
+            <span class="item-price">4.000 DT</span>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Chicha (Premium)</span>
+            <span class="item-price">12.000 DT</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>📍 Jendouba, Tunisia</p>
+        <a href="tel:+216XXXXXXXX" class="btn-call">Call Waiter</a>
+        <p style="font-size: 0.8rem; margin-top: 20px; color: #555;">&copy; Built by Ahmed Web Agency</p>
+    </div>
+
+</body>
+</html>
